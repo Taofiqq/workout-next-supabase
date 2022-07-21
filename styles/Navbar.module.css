@@ -1,0 +1,27 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111111;
+  color: #fafafa;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.loginButton {
+  background-color: #fafafa;
+  color: #111111;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

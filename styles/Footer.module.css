@@ -1,0 +1,16 @@
+.footerContainer {
+  width: 100%;
+  height: 10rem;
+  background-color: #1e1e12;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerText {
+  color: #fafafa;
+}
+
+.platform {
+  color: #a5c9ca;
+}
