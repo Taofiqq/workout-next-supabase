@@ -26,7 +26,7 @@ const Workout = ({ workout }) => {
         <p>Reps:{workout?.workoutReps}</p>
         <p>
           Date:{" "}
-          {formatDistanceToNow(new Date(workout.inserted_at), {
+          {formatDistanceToNow(new Date(workout?.inserted_at), {
             addSuffix: true,
           })}
         </p>
