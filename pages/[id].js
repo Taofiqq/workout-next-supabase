@@ -8,6 +8,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { formatDistanceToNow } from "date-fns/";
 
 const Workout = ({ workout }) => {
+  console.log(workout);
   const router = useRouter();
 
   const deleteWorkout = async (id) => {
@@ -20,9 +21,9 @@ const Workout = ({ workout }) => {
   return (
     <div className={styles.container}>
       <div className={styles.cardContainer}>
-        <h1> Title:{workout.workoutTitle}</h1>
-        <p>Load (g): {workout.workoutLoad}</p>
-        <p>Reps:{workout.workoutReps}</p>
+        <h1> Title:{workout?.workoutTitle}</h1>
+        <p>Load (g): {workout?.workoutLoad}</p>
+        <p>Reps:{workout?.workoutReps}</p>
         <p>
           Date:{" "}
           {formatDistanceToNow(new Date(workout.inserted_at), {
