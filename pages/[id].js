@@ -24,12 +24,12 @@ const Workout = ({ workout }) => {
         <h1> Title:{workout?.workoutTitle}</h1>
         <p>Load (g): {workout?.workoutLoad}</p>
         <p>Reps:{workout?.workoutReps}</p>
-        <p>
+        {/* <p>
           Date:{" "}
           {formatDistanceToNow(new Date(workout?.inserted_at), {
             addSuffix: true,
           })}
-        </p>
+        </p> */}
 
         <div className={styles.buttons}>
           <Link href={`/edit/${workout.id}`}>
