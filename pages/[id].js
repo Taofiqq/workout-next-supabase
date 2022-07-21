@@ -38,7 +38,7 @@ const Workout = ({ workout }) => {
             </a>
           </Link>
           <button
-            onClick={() => deleteWorkout(workout.id)}
+            onClick={() => deleteWorkout(workout?.id)}
             className={styles.delete}
           >
             <FaTrash />
