@@ -32,7 +32,7 @@ const Workout = ({ workout }) => {
         </p> */}
 
         <div className={styles.buttons}>
-          <Link href={`/edit/${workout.id}`}>
+          <Link href={`/edit/${workout?.id}`}>
             <a className={styles.edit}>
               <FiEdit />{" "}
             </a>
