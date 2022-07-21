@@ -60,7 +60,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
   const { id } = params;
   const { data } = await supabase
     .from("workouts")
