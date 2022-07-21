@@ -50,6 +50,7 @@ const Workout = ({ workout }) => {
   );
 };
 
+export default Workout;
 export async function getStaticPaths() {
   const { data, error } = await supabase.from("workouts").select("id");
   const paths = data.map((workout) => ({
@@ -74,4 +75,3 @@ export async function getStaticProps({ params }) {
     },
   };
 }
-export default Workout;
